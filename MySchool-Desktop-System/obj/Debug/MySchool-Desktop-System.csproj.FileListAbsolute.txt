@@ -1,0 +1,16 @@
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\MySchool-Desktop-System.exe.config
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\MySchool-Desktop-System.exe
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\MySchool-Desktop-System.pdb
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\Guna.UI2.dll
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\WinFormAnimation.dll
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.csproj.AssemblyReference.cache
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.LoginForm.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.MainForm.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.Properties.Resources.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.csproj.GenerateResource.cache
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.csproj.CoreCompileInputs.cache
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool.B9575D40.Up2Date
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.exe
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.pdb
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.exe.config
