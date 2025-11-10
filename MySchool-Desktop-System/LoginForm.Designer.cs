@@ -198,7 +198,7 @@
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, -5);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(538, 695);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(538, 613);
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 

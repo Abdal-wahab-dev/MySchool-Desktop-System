@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:addstudentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\detailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:detailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -18,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +50,82 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddStudentForm.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\AddStudentForm.cs",
+              "RelativeDocumentMoniker": "AddStudentForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\AddStudentForm.cs*",
+              "RelativeToolTip": "AddStudentForm.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAArwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T16:43:54.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:37:58.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvxIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T15:19:54.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddStudentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\AddStudentForm.cs",
+              "RelativeDocumentMoniker": "AddStudentForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\AddStudentForm.cs [Design]*",
+              "RelativeToolTip": "AddStudentForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T14:52:38.105Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetailsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsForm.cs",
+              "RelativeDocumentMoniker": "DetailsForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsForm.cs [Design]*",
+              "RelativeToolTip": "DetailsForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T14:16:01.43Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs",
+              "RelativeDocumentMoniker": "StudentManagement.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs [Design]",
+              "RelativeToolTip": "StudentManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:54:31.645Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -38,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
