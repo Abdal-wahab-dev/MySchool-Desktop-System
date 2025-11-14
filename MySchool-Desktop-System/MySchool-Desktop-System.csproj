@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -72,6 +72,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addNewTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewTeacher.Designer.cs">
+      <DependentUpon>addNewTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,21 @@
     <Compile Include="StudentManagement.Designer.cs">
       <DependentUpon>StudentManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherDeatials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherDeatials.Designer.cs">
+      <DependentUpon>TeacherDeatials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherManagement.Designer.cs">
+      <DependentUpon>teacherManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addNewTeacher.resx">
+      <DependentUpon>addNewTeacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentManagement.resx">
       <DependentUpon>StudentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDeatials.resx">
+      <DependentUpon>TeacherDeatials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherManagement.resx">
+      <DependentUpon>teacherManagement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
