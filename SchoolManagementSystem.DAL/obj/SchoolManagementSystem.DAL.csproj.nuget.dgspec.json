@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
+        "projectName": "SchoolManagementSystem.DAL",
+        "projectPath": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
+        "packagesPath": "C:\\Users\\iTech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\iTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net4.8"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net4.8",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net4.8",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

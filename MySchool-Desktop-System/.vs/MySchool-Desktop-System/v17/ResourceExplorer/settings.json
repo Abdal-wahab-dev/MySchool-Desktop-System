@@ -2,7 +2,7 @@
   "ShowEmptyProjects": false,
   "SelectedGroups": [],
   "ExpandedProjects": [],
-  "EnableSpellChecker": true,
+  "EnableSpellChecker": false,
   "ColumnOrder": [
     "name",
     "type",

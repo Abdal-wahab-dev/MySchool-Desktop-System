@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EKCotxgdWcQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iTech\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

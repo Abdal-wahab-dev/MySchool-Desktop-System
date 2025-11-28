@@ -1,0 +1,14 @@
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\bin\Debug\net4.8\SchoolManagementSystem.BLL.dll
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\bin\Debug\net4.8\SchoolManagementSystem.BLL.pdb
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\bin\Debug\net4.8\EntityFramework.SqlServer.dll
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\bin\Debug\net4.8\EntityFramework.dll
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\bin\Debug\net4.8\SchoolManagementSystem.DAL.dll
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\bin\Debug\net4.8\SchoolManagementSystem.DAL.pdb
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.csproj.AssemblyReference.cache
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.AssemblyInfoInputs.cache
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.AssemblyInfo.cs
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.csproj.CoreCompileInputs.cache
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolMa.40E0519C.Up2Date
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.dll
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.pdb
