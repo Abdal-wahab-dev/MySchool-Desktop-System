@@ -192,6 +192,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(234, 55);
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "إدارة المعلمين";
+            this.guna2Button2.Click += new System.EventHandler(this.btnTeacherForm_Click);
             // 
             // btnStudentForm
             // 

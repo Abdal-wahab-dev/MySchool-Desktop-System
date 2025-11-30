@@ -9,6 +9,7 @@ C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.AssemblyInfoInputs.cache
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.AssemblyInfo.cs
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.csproj.CoreCompileInputs.cache
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.sourcelink.json
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolMa.40E0519C.Up2Date
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.dll
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\obj\Debug\net4.8\SchoolManagementSystem.BLL.pdb

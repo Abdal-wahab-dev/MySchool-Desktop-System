@@ -3,12 +3,14 @@ C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\bin\Debug\net4
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\bin\Debug\net4.8\EntityFramework.SqlServer.dll
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\bin\Debug\net4.8\EntityFramework.dll
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.csproj.AssemblyReference.cache
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.Migrations.202511292235002_InitialCreate.resources
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.Migrations.202511292240417_UpdateSchema.resources
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.csproj.GenerateResource.cache
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.AssemblyInfoInputs.cache
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.AssemblyInfo.cs
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.csproj.CoreCompileInputs.cache
+C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.sourcelink.json
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolMa.F8A2665D.Up2Date
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.dll
 C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.pdb
-C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.Migrations.202511281957006_Baseline.resources
-C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.DAL\obj\Debug\net4.8\SchoolManagementSystem.DAL.csproj.GenerateResource.cache

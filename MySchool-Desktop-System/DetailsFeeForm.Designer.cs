@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtClass = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2TextBox20 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox14 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox13 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox12 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox11 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtFirstFee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSecondFee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtThirdFee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtForthFee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtFifthFee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSixthFee = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,7 +48,7 @@
             this.guna2TextBox23 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox22 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox26 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotalFee = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox25 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -66,29 +66,29 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "كشف الرسوم";
             // 
-            // guna2TextBox2
+            // txtClass
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
-            this.guna2TextBox2.BorderRadius = 20;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "الاول الثانوي";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(168, 131);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(306, 41);
-            this.guna2TextBox2.TabIndex = 33;
+            this.txtClass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
+            this.txtClass.BorderRadius = 20;
+            this.txtClass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtClass.DefaultText = "الاول الثانوي";
+            this.txtClass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtClass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtClass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtClass.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtClass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtClass.ForeColor = System.Drawing.Color.Black;
+            this.txtClass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtClass.Location = new System.Drawing.Point(168, 131);
+            this.txtClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtClass.Name = "txtClass";
+            this.txtClass.PlaceholderText = "";
+            this.txtClass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtClass.SelectedText = "";
+            this.txtClass.Size = new System.Drawing.Size(306, 41);
+            this.txtClass.TabIndex = 33;
             // 
             // label4
             // 
@@ -102,29 +102,29 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "الصف :";
             // 
-            // guna2TextBox1
+            // txtName
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "عبدالوهاب محمد عبده أحمد";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(616, 131);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(306, 41);
-            this.guna2TextBox1.TabIndex = 31;
+            this.txtName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
+            this.txtName.BorderRadius = 20;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "عبدالوهاب محمد عبده أحمد";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.Location = new System.Drawing.Point(616, 131);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtName.Name = "txtName";
+            this.txtName.PlaceholderText = "";
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtName.SelectedText = "";
+            this.txtName.Size = new System.Drawing.Size(306, 41);
+            this.txtName.TabIndex = 31;
             // 
             // label3
             // 
@@ -148,13 +148,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox20, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox4, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox14, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox13, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox12, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox11, 1, 1);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
+            this.tableLayoutPanel1.Controls.Add(this.txtFirstFee, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtSecondFee, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtThirdFee, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtForthFee, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtFifthFee, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtSixthFee, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox7, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox8, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox10, 4, 0);
@@ -163,7 +163,7 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox23, 7, 1);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox22, 7, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox9, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox26, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtTotalFee, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox25, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 257);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -174,137 +174,137 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1043, 137);
             this.tableLayoutPanel1.TabIndex = 44;
             // 
-            // guna2TextBox20
+            // txtFirstFee
             // 
-            this.guna2TextBox20.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox20.DefaultText = "";
-            this.guna2TextBox20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox20.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox20.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox20.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox20.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox20.Location = new System.Drawing.Point(787, 71);
-            this.guna2TextBox20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox20.Name = "guna2TextBox20";
-            this.guna2TextBox20.PlaceholderText = "";
-            this.guna2TextBox20.SelectedText = "";
-            this.guna2TextBox20.Size = new System.Drawing.Size(118, 62);
-            this.guna2TextBox20.TabIndex = 93;
-            this.guna2TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFirstFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFirstFee.DefaultText = "";
+            this.txtFirstFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFirstFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFirstFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFirstFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFirstFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtFirstFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFirstFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtFirstFee.ForeColor = System.Drawing.Color.Black;
+            this.txtFirstFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFirstFee.Location = new System.Drawing.Point(786, 71);
+            this.txtFirstFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFirstFee.Name = "txtFirstFee";
+            this.txtFirstFee.PlaceholderText = "";
+            this.txtFirstFee.SelectedText = "";
+            this.txtFirstFee.Size = new System.Drawing.Size(118, 62);
+            this.txtFirstFee.TabIndex = 93;
+            this.txtFirstFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox4
+            // txtSecondFee
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(654, 71);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(127, 62);
-            this.guna2TextBox4.TabIndex = 91;
-            this.guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSecondFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSecondFee.DefaultText = "";
+            this.txtSecondFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSecondFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSecondFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSecondFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSecondFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSecondFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSecondFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtSecondFee.ForeColor = System.Drawing.Color.Black;
+            this.txtSecondFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSecondFee.Location = new System.Drawing.Point(653, 71);
+            this.txtSecondFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSecondFee.Name = "txtSecondFee";
+            this.txtSecondFee.PlaceholderText = "";
+            this.txtSecondFee.SelectedText = "";
+            this.txtSecondFee.Size = new System.Drawing.Size(127, 62);
+            this.txtSecondFee.TabIndex = 91;
+            this.txtSecondFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox14
+            // txtThirdFee
             // 
-            this.guna2TextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox14.DefaultText = "";
-            this.guna2TextBox14.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox14.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox14.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox14.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox14.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox14.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox14.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox14.Location = new System.Drawing.Point(522, 71);
-            this.guna2TextBox14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox14.Name = "guna2TextBox14";
-            this.guna2TextBox14.PlaceholderText = "";
-            this.guna2TextBox14.SelectedText = "";
-            this.guna2TextBox14.Size = new System.Drawing.Size(126, 62);
-            this.guna2TextBox14.TabIndex = 89;
-            this.guna2TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtThirdFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtThirdFee.DefaultText = "";
+            this.txtThirdFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtThirdFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtThirdFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThirdFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtThirdFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtThirdFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThirdFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtThirdFee.ForeColor = System.Drawing.Color.Black;
+            this.txtThirdFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtThirdFee.Location = new System.Drawing.Point(521, 71);
+            this.txtThirdFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtThirdFee.Name = "txtThirdFee";
+            this.txtThirdFee.PlaceholderText = "";
+            this.txtThirdFee.SelectedText = "";
+            this.txtThirdFee.Size = new System.Drawing.Size(126, 62);
+            this.txtThirdFee.TabIndex = 89;
+            this.txtThirdFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox13
+            // txtForthFee
             // 
-            this.guna2TextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox13.DefaultText = "";
-            this.guna2TextBox13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox13.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox13.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox13.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox13.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Location = new System.Drawing.Point(390, 71);
-            this.guna2TextBox13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox13.Name = "guna2TextBox13";
-            this.guna2TextBox13.PlaceholderText = "";
-            this.guna2TextBox13.SelectedText = "";
-            this.guna2TextBox13.Size = new System.Drawing.Size(126, 62);
-            this.guna2TextBox13.TabIndex = 87;
-            this.guna2TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtForthFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtForthFee.DefaultText = "";
+            this.txtForthFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtForthFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtForthFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtForthFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtForthFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtForthFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtForthFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtForthFee.ForeColor = System.Drawing.Color.Black;
+            this.txtForthFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtForthFee.Location = new System.Drawing.Point(389, 71);
+            this.txtForthFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtForthFee.Name = "txtForthFee";
+            this.txtForthFee.PlaceholderText = "";
+            this.txtForthFee.SelectedText = "";
+            this.txtForthFee.Size = new System.Drawing.Size(126, 62);
+            this.txtForthFee.TabIndex = 87;
+            this.txtForthFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox12
+            // txtFifthFee
             // 
-            this.guna2TextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox12.DefaultText = "";
-            this.guna2TextBox12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox12.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox12.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Location = new System.Drawing.Point(272, 71);
-            this.guna2TextBox12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox12.Name = "guna2TextBox12";
-            this.guna2TextBox12.PlaceholderText = "";
-            this.guna2TextBox12.SelectedText = "";
-            this.guna2TextBox12.Size = new System.Drawing.Size(112, 62);
-            this.guna2TextBox12.TabIndex = 85;
-            this.guna2TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFifthFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFifthFee.DefaultText = "";
+            this.txtFifthFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFifthFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFifthFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFifthFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFifthFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtFifthFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFifthFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtFifthFee.ForeColor = System.Drawing.Color.Black;
+            this.txtFifthFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFifthFee.Location = new System.Drawing.Point(271, 71);
+            this.txtFifthFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFifthFee.Name = "txtFifthFee";
+            this.txtFifthFee.PlaceholderText = "";
+            this.txtFifthFee.SelectedText = "";
+            this.txtFifthFee.Size = new System.Drawing.Size(112, 62);
+            this.txtFifthFee.TabIndex = 85;
+            this.txtFifthFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox11
+            // txtSixthFee
             // 
-            this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox11.DefaultText = "";
-            this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox11.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox11.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(130, 71);
-            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox11.Name = "guna2TextBox11";
-            this.guna2TextBox11.PlaceholderText = "";
-            this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(136, 62);
-            this.guna2TextBox11.TabIndex = 83;
-            this.guna2TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSixthFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSixthFee.DefaultText = "";
+            this.txtSixthFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSixthFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSixthFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSixthFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSixthFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSixthFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSixthFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtSixthFee.ForeColor = System.Drawing.Color.Black;
+            this.txtSixthFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSixthFee.Location = new System.Drawing.Point(130, 71);
+            this.txtSixthFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSixthFee.Name = "txtSixthFee";
+            this.txtSixthFee.PlaceholderText = "";
+            this.txtSixthFee.SelectedText = "";
+            this.txtSixthFee.Size = new System.Drawing.Size(135, 62);
+            this.txtSixthFee.TabIndex = 83;
+            this.txtSixthFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2TextBox7
             // 
@@ -324,7 +324,7 @@
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PlaceholderText = "";
             this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(134, 57);
+            this.guna2TextBox7.Size = new System.Drawing.Size(133, 57);
             this.guna2TextBox7.TabIndex = 77;
             this.guna2TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -341,7 +341,7 @@
             this.guna2TextBox8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox8.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(273, 5);
+            this.guna2TextBox8.Location = new System.Drawing.Point(272, 5);
             this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PlaceholderText = "";
@@ -363,7 +363,7 @@
             this.guna2TextBox10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox10.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Location = new System.Drawing.Point(523, 5);
+            this.guna2TextBox10.Location = new System.Drawing.Point(522, 5);
             this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox10.Name = "guna2TextBox10";
             this.guna2TextBox10.PlaceholderText = "";
@@ -385,7 +385,7 @@
             this.guna2TextBox3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(655, 5);
+            this.guna2TextBox3.Location = new System.Drawing.Point(654, 5);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PlaceholderText = "";
@@ -407,7 +407,7 @@
             this.guna2TextBox19.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox19.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox19.Location = new System.Drawing.Point(788, 5);
+            this.guna2TextBox19.Location = new System.Drawing.Point(787, 5);
             this.guna2TextBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox19.Name = "guna2TextBox19";
             this.guna2TextBox19.PlaceholderText = "";
@@ -429,7 +429,7 @@
             this.guna2TextBox23.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox23.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox23.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox23.Location = new System.Drawing.Point(911, 71);
+            this.guna2TextBox23.Location = new System.Drawing.Point(910, 71);
             this.guna2TextBox23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox23.Name = "guna2TextBox23";
             this.guna2TextBox23.PlaceholderText = "";
@@ -451,7 +451,7 @@
             this.guna2TextBox22.Font = new System.Drawing.Font("Cambria", 12F);
             this.guna2TextBox22.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox22.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox22.Location = new System.Drawing.Point(912, 5);
+            this.guna2TextBox22.Location = new System.Drawing.Point(911, 5);
             this.guna2TextBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox22.Name = "guna2TextBox22";
             this.guna2TextBox22.PlaceholderText = "";
@@ -473,7 +473,7 @@
             this.guna2TextBox9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox9.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(391, 5);
+            this.guna2TextBox9.Location = new System.Drawing.Point(390, 5);
             this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PlaceholderText = "";
@@ -482,27 +482,27 @@
             this.guna2TextBox9.TabIndex = 71;
             this.guna2TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2TextBox26
+            // txtTotalFee
             // 
-            this.guna2TextBox26.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox26.DefaultText = "";
-            this.guna2TextBox26.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox26.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox26.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox26.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox26.FillColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2TextBox26.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox26.Font = new System.Drawing.Font("Cambria", 10F);
-            this.guna2TextBox26.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox26.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox26.Location = new System.Drawing.Point(3, 71);
-            this.guna2TextBox26.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox26.Name = "guna2TextBox26";
-            this.guna2TextBox26.PlaceholderText = "";
-            this.guna2TextBox26.SelectedText = "";
-            this.guna2TextBox26.Size = new System.Drawing.Size(121, 62);
-            this.guna2TextBox26.TabIndex = 81;
-            this.guna2TextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotalFee.DefaultText = "";
+            this.txtTotalFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTotalFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTotalFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotalFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotalFee.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.txtTotalFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotalFee.Font = new System.Drawing.Font("Cambria", 10F);
+            this.txtTotalFee.ForeColor = System.Drawing.Color.Black;
+            this.txtTotalFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotalFee.Location = new System.Drawing.Point(3, 71);
+            this.txtTotalFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTotalFee.Name = "txtTotalFee";
+            this.txtTotalFee.PlaceholderText = "";
+            this.txtTotalFee.SelectedText = "";
+            this.txtTotalFee.Size = new System.Drawing.Size(121, 62);
+            this.txtTotalFee.TabIndex = 81;
+            this.txtTotalFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2TextBox25
             // 
@@ -543,13 +543,14 @@
             this.ClientSize = new System.Drawing.Size(1060, 770);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.txtClass);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DetailsFeeForm";
             this.Text = "س";
+            this.Load += new System.EventHandler(this.DetailsFeeForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -561,9 +562,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtClass;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
@@ -574,14 +575,14 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox19;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox23;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox22;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox26;
+        private Guna.UI2.WinForms.Guna2TextBox txtTotalFee;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox25;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox20;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox14;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox13;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox12;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox11;
+        private Guna.UI2.WinForms.Guna2TextBox txtFirstFee;
+        private Guna.UI2.WinForms.Guna2TextBox txtSecondFee;
+        private Guna.UI2.WinForms.Guna2TextBox txtThirdFee;
+        private Guna.UI2.WinForms.Guna2TextBox txtForthFee;
+        private Guna.UI2.WinForms.Guna2TextBox txtFifthFee;
+        private Guna.UI2.WinForms.Guna2TextBox txtSixthFee;
         private System.Windows.Forms.Panel panel1;
     }
 }

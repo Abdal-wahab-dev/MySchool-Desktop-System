@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\202511292235002_InitialCreate.cs" />
+    <Compile Remove="Migrations\202511292240417_UpdateSchema.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202511292235002_InitialCreate.cs" />
+    <EmbeddedResource Include="Migrations\202511292240417_UpdateSchema.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Model\SchoolClass.cs" />
   </ItemGroup>
 

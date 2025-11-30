@@ -52,5 +52,10 @@ namespace MySchool_Desktop_System
                 CurrentForm.Show();
             }
         }
+
+        private void btnTeacherForm_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanel(new teacherManagement());
+        }
     }
 }

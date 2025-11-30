@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = SchoolManagementSystem.BLL
-build_property.ProjectDir = C:\Users\iTech\MySchool-Desktop-System\SchoolManagementSystem.BLL\
+build_property.ProjectDir = D:\myProject\MySchool-Desktop-System\SchoolManagementSystem.BLL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
