@@ -7,13 +7,13 @@ namespace SchoolManagementSystem.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class Baseline : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Baseline));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "202511281957006_Baseline"; }
+            get { return "202511292235002_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

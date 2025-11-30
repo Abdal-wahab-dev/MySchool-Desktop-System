@@ -12,9 +12,24 @@ namespace MySchool_Desktop_System
 {
     public partial class DetailsGradeForm : Form
     {
-        public DetailsGradeForm()
+        private Panel parentPanel;
+        public DetailsGradeForm(Panel panel)
         {
             InitializeComponent();
+            parentPanel = panel;
+        }
+
+        public void ShowInPanel()
+        {
+            this.TopLevel = false;           // لا يظهر كنافذة مستقلة
+            this.Dock = DockStyle.Fill;      // يملأ مساحة الـ Panel بالكامل
+            parentPanel.Controls.Add(this);  // إضافة الفورم للـ Panel
+            this.BringToFront();             // يكون أمام كل شيء
+            this.Show();
+        }
+        private void DetailsGradeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

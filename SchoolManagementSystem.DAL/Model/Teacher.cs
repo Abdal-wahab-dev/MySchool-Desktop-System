@@ -16,6 +16,7 @@ namespace SchoolManagementSystem.DAL.Model
         public  string phoneNumber {  get; set; }
         public string gender {  get; set; }
         public double salary { get; set; }
+         
 
         public virtual ICollection<Subject> Subjects { get; set; } = new List<Subject>();
         public virtual ICollection<SchoolClass> SchoolClasses { get; set; } = new List<SchoolClass>();

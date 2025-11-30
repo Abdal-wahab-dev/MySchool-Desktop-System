@@ -16,6 +16,16 @@ namespace MySchool_Desktop_System
     {
         private Stack<Form> formStack = new Stack<Form>();
         private Form CurrentForm = null;
+
+        public MainForm(string userName)
+        {
+            InitializeComponent();
+
+            // 3. عرض الاسم في الـ Label مباشرة
+            lblUserName.Text = $"{userName}";
+
+            // (اختياري) يمكنك أيضاً وضع التاريخ أو أي شيء آخر
+        }
         public MainForm()
         {
             InitializeComponent();
@@ -51,6 +61,16 @@ namespace MySchool_Desktop_System
                 CurrentForm = formStack.Pop();
                 CurrentForm.Show();
             }
+        }
+
+        private void btnTeacherForm_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanel(new teacherManagement());
+        }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

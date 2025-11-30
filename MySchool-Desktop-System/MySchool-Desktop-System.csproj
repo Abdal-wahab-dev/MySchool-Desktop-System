@@ -76,17 +76,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addNewTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNewTeacher.Designer.cs">
+      <DependentUpon>addNewTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClassManagement.Designer.cs">
       <DependentUpon>ClassManagement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddTableSubjectForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddTableSubjectForm.Designer.cs">
-      <DependentUpon>AddTableSubjectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StatisticsForm.cs">
       <SubType>Form</SubType>
@@ -138,11 +138,29 @@
     <Compile Include="SubjectsForm.Designer.cs">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherDeatials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherDeatials.Designer.cs">
+      <DependentUpon>TeacherDeatials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherManagement.Designer.cs">
+      <DependentUpon>teacherManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudent.Designer.cs">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addNewTeacher.resx">
+      <DependentUpon>addNewTeacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassManagement.resx">
       <DependentUpon>ClassManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddTableSubjectForm.resx">
-      <DependentUpon>AddTableSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StatisticsForm.resx">
       <DependentUpon>StatisticsForm.cs</DependentUpon>
@@ -172,6 +190,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubjectsForm.resx">
       <DependentUpon>SubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDeatials.resx">
+      <DependentUpon>TeacherDeatials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherManagement.resx">
+      <DependentUpon>teacherManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudent.resx">
+      <DependentUpon>UpdateStudent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

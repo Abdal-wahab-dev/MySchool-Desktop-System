@@ -3,58 +3,86 @@
   "WorkspaceRootPath": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\migrations\\202511281957006_baseline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\classmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:classmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\addnewteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:addnewteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\schoolclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\fee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\installment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\repositries\\studentrepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|c:\\users\\itech\\myschool-desktop-system\\myschool-desktop-system\\studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:studentmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\detailsgradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:detailsgradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0047DB-6F35-4462-B8C5-01D3DEEB7DC7}|..\\SchoolManagementSystem.BLL\\SchoolManagementSystem.BLL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.bll\\services\\studentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\repositries\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0047DB-6F35-4462-B8C5-01D3DEEB7DC7}|..\\SchoolManagementSystem.BLL\\SchoolManagementSystem.BLL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teachermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:teachermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02C7F585-BD4E-4CDA-B504-8C1BBF34EDF7}|..\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj|c:\\users\\itech\\myschool-desktop-system\\schoolmanagementsystem.dal\\repositries\\teacherrepositry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\detailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:detailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\detailsgradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:detailsgradeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teachermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:teachermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\updatestudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:updatestudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teacherdeatials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:teacherdeatials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\detailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCEAF065-1BCD-4A9F-A048-9A7240F59C4D}|MySchool-Desktop-System.csproj|solutionrelative:detailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,131 +92,260 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\ClassManagement.cs",
+              "RelativeDocumentMoniker": "ClassManagement.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\ClassManagement.cs [Design]",
+              "RelativeToolTip": "ClassManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:29:02.237Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fee.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Fee.cs",
+              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\Fee.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Fee.cs",
+              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\Fee.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:16:23.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Installment.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Installment.cs",
+              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\Installment.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Installment.cs",
+              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\Installment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:14:07.691Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "202511281957006_Baseline.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Migrations\\202511281957006_Baseline.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Migrations\\202511281957006_Baseline.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Migrations\\202511281957006_Baseline.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Migrations\\202511281957006_Baseline.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StudentManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs",
+              "RelativeDocumentMoniker": "StudentManagement.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs [Design]",
+              "RelativeToolTip": "StudentManagement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T19:57:05.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T17:06:27.272Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T19:56:36.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SchoolClass.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\SchoolClass.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\SchoolClass.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\SchoolClass.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\SchoolClass.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T19:05:41.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T13:17:37.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Teacher.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\Teacher.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Teacher.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T12:41:53.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Section.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Section.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\Section.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Section.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\Section.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T22:58:19.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T21:41:09.915Z"
+              "WhenOpened": "2025-11-30T16:51:48.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:52:00.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.BLL\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.BLL\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.BLL\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\SchoolManagementSystem.BLL\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:48:56.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:43:31.473Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\User.cs",
+              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\User.cs",
+              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:34:44.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Repositries\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Repositries\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Repositries\\UserRepository.cs",
+              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Repositries\\UserRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwBAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:31:40.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:23:40.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DetailsGradeForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsGradeForm.cs",
+              "RelativeDocumentMoniker": "DetailsGradeForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsGradeForm.cs [Design]",
+              "RelativeToolTip": "DetailsGradeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T14:34:53.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T21:40:18.328Z"
+              "WhenOpened": "2025-11-30T14:06:12.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Student.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Model\\Student.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Model\\Student.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Model\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "UpdateStudent.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\UpdateStudent.cs",
+              "RelativeDocumentMoniker": "UpdateStudent.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\UpdateStudent.cs",
+              "RelativeToolTip": "UpdateStudent.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAxwHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T20:35:37.876Z"
+              "WhenOpened": "2025-11-30T12:16:25.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "studentRepositry.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Repositries\\studentRepositry.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Repositries\\studentRepositry.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Repositries\\studentRepositry.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Repositries\\studentRepositry.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAqwD0AAAAIAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "TeacherDeatials.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\TeacherDeatials.cs",
+              "RelativeDocumentMoniker": "TeacherDeatials.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\TeacherDeatials.cs",
+              "RelativeToolTip": "TeacherDeatials.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAkwHoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T20:15:47.055Z"
+              "WhenOpened": "2025-11-30T10:28:28.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsForm.cs",
+              "RelativeDocumentMoniker": "DetailsForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsForm.cs",
+              "RelativeToolTip": "DetailsForm.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T01:04:20.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DetailsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsForm.cs",
+              "RelativeDocumentMoniker": "DetailsForm.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsForm.cs [Design]",
+              "RelativeToolTip": "DetailsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T01:04:18.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "teacherManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teacherManagement.cs",
+              "RelativeDocumentMoniker": "teacherManagement.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teacherManagement.cs [Design]",
+              "RelativeToolTip": "teacherManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T00:48:47.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "addNewTeacher.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\addNewTeacher.cs",
+              "RelativeDocumentMoniker": "addNewTeacher.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\addNewTeacher.cs [Design]",
+              "RelativeToolTip": "addNewTeacher.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T21:40:04.4Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "teacherRepositry.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Repositries\\teacherRepositry.cs",
+              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Repositries\\teacherRepositry.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Repositries\\teacherRepositry.cs",
+              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Repositries\\teacherRepositry.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T18:28:55.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "teacherManagement.cs",
+              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teacherManagement.cs",
+              "RelativeDocumentMoniker": "teacherManagement.cs",
+              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\teacherManagement.cs",
+              "RelativeToolTip": "teacherManagement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T18:16:54.938Z"
             },
             {
               "$type": "Document",
@@ -198,66 +355,9 @@
               "RelativeDocumentMoniker": "StudentManagement.cs",
               "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs",
               "RelativeToolTip": "StudentManagement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAxwGwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T20:15:05.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StudentServices.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.BLL\\Services\\StudentServices.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.BLL\\Services\\StudentServices.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.BLL\\Services\\StudentServices.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.BLL\\Services\\StudentServices.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwCoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T20:11:35.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DetailsGradeForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsGradeForm.cs",
-              "RelativeDocumentMoniker": "DetailsGradeForm.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\DetailsGradeForm.cs [Design]",
-              "RelativeToolTip": "DetailsGradeForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T19:51:34.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T19:51:27.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StudentManagement.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs",
-              "RelativeDocumentMoniker": "StudentManagement.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\MySchool-Desktop-System\\StudentManagement.cs [Design]",
-              "RelativeToolTip": "StudentManagement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T19:39:57.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\SchoolManagementSystem.DAL\\Class1.cs",
-              "ToolTip": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\Class1.cs",
-              "RelativeToolTip": "..\\SchoolManagementSystem.DAL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:34:57.327Z"
             }
           ]
         }

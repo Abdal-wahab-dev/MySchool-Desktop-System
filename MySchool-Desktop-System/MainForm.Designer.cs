@@ -38,7 +38,7 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnStudentForm = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -184,7 +184,6 @@
             this.guna2Button2.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.guna2Button2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageSize = new System.Drawing.Size(40, 35);
             this.guna2Button2.Location = new System.Drawing.Point(5, 285);
@@ -192,6 +191,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(234, 55);
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "إدارة المعلمين";
+            this.guna2Button2.Click += new System.EventHandler(this.btnTeacherForm_Click);
             // 
             // btnStudentForm
             // 
@@ -219,7 +219,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
-            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.lblUserName);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.guna2Panel1.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,17 +228,17 @@
             this.guna2Panel1.Size = new System.Drawing.Size(233, 121);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // label1
+            // lblUserName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(71, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "اسم المستخدم";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblUserName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblUserName.Location = new System.Drawing.Point(71, 85);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(83, 23);
+            this.lblUserName.TabIndex = 1;
+            this.lblUserName.Text = "اسم المستخدم";
             // 
             // guna2PictureBox1
             // 
@@ -261,6 +261,7 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1060, 770);
             this.panelContainer.TabIndex = 1;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // guna2PictureBox3
             // 
@@ -308,7 +309,7 @@
         private System.Windows.Forms.Panel panelContainer;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUserName;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private FontAwesome.Sharp.IconButton iconButtonBack;
     }
