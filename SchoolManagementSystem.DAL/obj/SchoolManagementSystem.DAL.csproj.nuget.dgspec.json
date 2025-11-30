@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj": {}
+    "C:\\Users\\Abdullah Maresh\\source\\repos\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj": {
+    "C:\\Users\\Abdullah Maresh\\source\\repos\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Abdullah Maresh\\source\\repos\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
         "projectName": "SchoolManagementSystem.DAL",
-        "projectPath": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
-        "packagesPath": "C:\\Users\\iTech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iTech\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Abdullah Maresh\\source\\repos\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\SchoolManagementSystem.DAL.csproj",
+        "packagesPath": "C:\\Users\\Abdullah Maresh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Abdullah Maresh\\source\\repos\\MySchool-Desktop-System\\SchoolManagementSystem.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\iTech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Abdullah Maresh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +51,7 @@
               "version": "[6.5.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
