@@ -1,13 +1,14 @@
 ﻿
+using SchoolManagementSystem.DAL.Context;
+using SchoolManagementSystem.DAL.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations; // تأكد من وجود هذه المكتبة
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
-using SchoolManagementSystem.DAL.Context;
-using SchoolManagementSystem.DAL.Model;
 
 namespace SchoolManagementSystem.DAL.Repositries
 {
@@ -82,5 +83,6 @@ namespace SchoolManagementSystem.DAL.Repositries
         {
             return con.Sections.ToList();
         }
+
     }
 }

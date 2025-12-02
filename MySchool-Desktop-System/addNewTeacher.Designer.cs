@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,17 +46,20 @@
             this.txtSalary = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.SaveTeacher = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(914, 213);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -65,6 +69,8 @@
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.Location = new System.Drawing.Point(574, 213);
             this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
@@ -74,7 +80,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(861, 277);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -84,17 +92,21 @@
             // 
             // dtpGraduateDate
             // 
+            this.dtpGraduateDate.BackColor = System.Drawing.Color.White;
+            this.dtpGraduateDate.ForeColor = System.Drawing.Color.Black;
             this.dtpGraduateDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpGraduateDate.Location = new System.Drawing.Point(623, 278);
+            this.dtpGraduateDate.Location = new System.Drawing.Point(574, 278);
             this.dtpGraduateDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpGraduateDate.Name = "dtpGraduateDate";
-            this.dtpGraduateDate.Size = new System.Drawing.Size(212, 24);
+            this.dtpGraduateDate.Size = new System.Drawing.Size(261, 24);
             this.dtpGraduateDate.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(279, 420);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -103,14 +115,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.rdoFemale);
             this.groupBox1.Controls.Add(this.rdoMale);
-            this.groupBox1.Location = new System.Drawing.Point(757, 420);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(608, 420);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(212, 54);
+            this.groupBox1.Size = new System.Drawing.Size(312, 54);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "الجنس ";
@@ -118,31 +132,37 @@
             // rdoFemale
             // 
             this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Location = new System.Drawing.Point(19, 26);
+            this.rdoFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rdoFemale.ForeColor = System.Drawing.Color.Black;
+            this.rdoFemale.Location = new System.Drawing.Point(50, 25);
             this.rdoFemale.Margin = new System.Windows.Forms.Padding(4);
             this.rdoFemale.Name = "rdoFemale";
             this.rdoFemale.Size = new System.Drawing.Size(55, 21);
             this.rdoFemale.TabIndex = 12;
             this.rdoFemale.TabStop = true;
             this.rdoFemale.Text = "انثى";
-            this.rdoFemale.UseVisualStyleBackColor = true;
+            this.rdoFemale.UseVisualStyleBackColor = false;
             // 
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
-            this.rdoMale.Location = new System.Drawing.Point(110, 25);
+            this.rdoMale.BackColor = System.Drawing.Color.Transparent;
+            this.rdoMale.ForeColor = System.Drawing.Color.Black;
+            this.rdoMale.Location = new System.Drawing.Point(177, 25);
             this.rdoMale.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMale.Name = "rdoMale";
             this.rdoMale.Size = new System.Drawing.Size(49, 21);
             this.rdoMale.TabIndex = 11;
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "ذكر";
-            this.rdoMale.UseVisualStyleBackColor = true;
+            this.rdoMale.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(857, 358);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -152,17 +172,21 @@
             // 
             // dtpDate
             // 
+            this.dtpDate.BackColor = System.Drawing.Color.White;
+            this.dtpDate.ForeColor = System.Drawing.Color.Black;
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(623, 359);
+            this.dtpDate.Location = new System.Drawing.Point(574, 359);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(212, 24);
+            this.dtpDate.Size = new System.Drawing.Size(261, 24);
             this.dtpDate.TabIndex = 12;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(404, 213);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
@@ -172,6 +196,8 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.BackColor = System.Drawing.Color.White;
+            this.txtAddress.ForeColor = System.Drawing.Color.Black;
             this.txtAddress.Location = new System.Drawing.Point(82, 217);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
@@ -180,6 +206,8 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.BackColor = System.Drawing.Color.White;
+            this.txtPhone.ForeColor = System.Drawing.Color.Black;
             this.txtPhone.Location = new System.Drawing.Point(82, 281);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
@@ -189,7 +217,9 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(374, 281);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
@@ -199,6 +229,8 @@
             // 
             // txtSalary
             // 
+            this.txtSalary.BackColor = System.Drawing.Color.White;
+            this.txtSalary.ForeColor = System.Drawing.Color.Black;
             this.txtSalary.Location = new System.Drawing.Point(82, 341);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalary.Name = "txtSalary";
@@ -208,7 +240,9 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(393, 341);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
@@ -218,29 +252,23 @@
             // 
             // SaveTeacher
             // 
-            this.SaveTeacher.Location = new System.Drawing.Point(419, 446);
+            this.SaveTeacher.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SaveTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveTeacher.ForeColor = System.Drawing.Color.Black;
+            this.SaveTeacher.Location = new System.Drawing.Point(82, 473);
             this.SaveTeacher.Margin = new System.Windows.Forms.Padding(4);
             this.SaveTeacher.Name = "SaveTeacher";
-            this.SaveTeacher.Size = new System.Drawing.Size(122, 41);
+            this.SaveTeacher.Size = new System.Drawing.Size(273, 41);
             this.SaveTeacher.TabIndex = 22;
             this.SaveTeacher.Text = "حفظ ";
-            this.SaveTeacher.UseVisualStyleBackColor = true;
+            this.SaveTeacher.UseVisualStyleBackColor = false;
             this.SaveTeacher.Click += new System.EventHandler(this.SaveTeacher_Click_1);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(211, 446);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 41);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "تصفيه ";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label11);
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(12, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1036, 72);
@@ -249,6 +277,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(466, 15);
@@ -257,6 +286,10 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "اضافة معلم ";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // addNewTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -264,7 +297,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1060, 770);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.SaveTeacher);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtSalary);
@@ -280,14 +312,17 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addNewTeacher";
             this.Text = "addNewTeacher";
+            this.Load += new System.EventHandler(this.addNewTeacher_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,8 +347,8 @@
         private System.Windows.Forms.TextBox txtSalary;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button SaveTeacher;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

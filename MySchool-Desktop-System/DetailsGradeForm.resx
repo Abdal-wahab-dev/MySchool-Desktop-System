@@ -183,34 +183,34 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="txtStudentName.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="txtStudentName.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
     <value>585, 178</value>
   </data>
-  <data name="txtStudentName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="txtStudentName.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="txtName.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
-  <data name="txtStudentName.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 41</value>
   </data>
-  <data name="txtStudentName.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtName.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;txtStudentName.Name" xml:space="preserve">
-    <value>txtStudentName</value>
+  <data name="&gt;&gt;txtName.Name" xml:space="preserve">
+    <value>txtName</value>
   </data>
-  <data name="&gt;&gt;txtStudentName.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;txtStudentName.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtStudentName.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
@@ -640,6 +640,6 @@
     <value>DetailsGradeForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MySchool_Desktop_System.BaseForm, MySchool-Desktop-System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

@@ -9,7 +9,7 @@ namespace SchoolManagementSystem.DAL.Repositries
     {
         // ❌ احذف هذا السطر: private readonly AppDbContext con = new AppDbContext();
 
-        public User Login(string username, string password)
+        public User Login(string username, string password , string type)
         {
             int passInt;
 
@@ -18,8 +18,8 @@ namespace SchoolManagementSystem.DAL.Repositries
             {
                 if (int.TryParse(password, out passInt))
                 {
-                    // تأكد أنك تستخدم DbSet بصيغة الجمع: con.Users
-                    return context.Users.FirstOrDefault(u => u.UserName == username && u.Password == passInt);
+                   
+                    return context.Users.FirstOrDefault(u => u.UserName == username && u.Password == passInt && u.Type == type);
                 }
                 return null;
             }

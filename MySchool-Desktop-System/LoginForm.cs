@@ -28,6 +28,7 @@ namespace MySchool_Desktop_System
         {
             
         }
+        
         private void FillUserTypes()
         {
             
@@ -68,17 +69,18 @@ namespace MySchool_Desktop_System
             try
             {
                 string user = txtUserName.Text.Trim();
-                string pass = txtPassword.Text.Trim(); // تأكد أن التيكست بوكس هذا خاصيته PasswordChar = '*'
+                string pass = txtPassword.Text.Trim();
+                string type = comboType.Text;
 
                 // استدعاء الخدمة
-                User loggedInUser = userService.ValidateUser(user, pass);
+                User loggedInUser = userService.ValidateUser(user, pass , type);
 
                 if (loggedInUser != null)
                 {
                     // تسجيل الدخول ناجح
-                    MessageBox.Show($"مرحباً بك يا {loggedInUser.UserName}، صفتك: {loggedInUser.Type}", "نجاح");
+                    //MessageBox.Show($"مرحباً بك يا {loggedInUser.UserName}، صفتك: {loggedInUser.Type}", "نجاح");
 
-                    // فتح الفورم الرئيسي
+                    
                     MainForm mainForm = new MainForm(loggedInUser.UserName);
 
                     // (اختياري) يمكنك تمرير نوع المستخدم للفورم الرئيسي للتحكم بالصلاحيات
@@ -87,7 +89,7 @@ namespace MySchool_Desktop_System
                     mainForm.Show();
                     this.Hide();
 
-                    // إغلاق البرنامج بالكامل عند إغلاق الفورم الرئيسي
+                    
                     mainForm.FormClosed += (s, args) => Application.Exit();
                 }
                 else
@@ -101,7 +103,15 @@ namespace MySchool_Desktop_System
             }
         }
 
-        
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+
+            RegisterForm frm = new RegisterForm();
+
+            
+            frm.ShowDialog();
+
+        }
     }
 }
 

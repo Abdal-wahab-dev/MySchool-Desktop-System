@@ -122,10 +122,7 @@ namespace SchoolManagementSystem.BLL.Services
             }
             
             // قاعدة عمل: منع الحذف إذا كان المعلم قد تم تعيينه مؤخراً (خلال أول 30 يوم)
-            if (existingTeacher.Date > DateTime.Today.AddDays(-30))
-            {
-                throw new InvalidOperationException("خطأ: لا يمكن حذف المعلم قبل مرور 30 يوماً على تعيينه.");
-            }
+            
             
             teacherService.RemoveTeacher(teacher);
         }

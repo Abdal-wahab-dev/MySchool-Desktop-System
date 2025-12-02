@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MySchool_Desktop_System
+namespace WindowsFormsApp1
 {
-    public partial class SubjectsForm : Form
+    public partial class Salaries : Form
     {
-        public SubjectsForm()
+        public Salaries()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

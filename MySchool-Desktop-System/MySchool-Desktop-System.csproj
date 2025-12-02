@@ -82,17 +82,32 @@
     <Compile Include="addNewTeacher.Designer.cs">
       <DependentUpon>addNewTeacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassManagement.cs">
+    <Compile Include="baseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassManagement.Designer.cs">
-      <DependentUpon>ClassManagement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StatisticsForm.cs">
+    <Compile Include="DegreeEntered.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StatisticsForm.Designer.cs">
-      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    <Compile Include="DegreeEntered.Designer.cs">
+      <DependentUpon>DegreeEntered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salaries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salaries.Designer.cs">
+      <DependentUpon>Salaries.cs</DependentUpon>
     </Compile>
     <Compile Include="DetailsFeeForm.cs">
       <SubType>Form</SubType>
@@ -132,11 +147,11 @@
     <Compile Include="StudentManagement.Designer.cs">
       <DependentUpon>StudentManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubjectsForm.cs">
+    <Compile Include="SubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubjectsForm.Designer.cs">
-      <DependentUpon>SubjectsForm.cs</DependentUpon>
+    <Compile Include="SubjectForm.Designer.cs">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherDeatials.cs">
       <SubType>Form</SubType>
@@ -150,6 +165,7 @@
     <Compile Include="teacherManagement.Designer.cs">
       <DependentUpon>teacherManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemeManager.cs" />
     <Compile Include="UpdateStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,11 +175,20 @@
     <EmbeddedResource Include="addNewTeacher.resx">
       <DependentUpon>addNewTeacher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClassManagement.resx">
-      <DependentUpon>ClassManagement.cs</DependentUpon>
+    <EmbeddedResource Include="baseForm.resx">
+      <DependentUpon>baseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StatisticsForm.resx">
-      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    <EmbeddedResource Include="DegreeEntered.resx">
+      <DependentUpon>DegreeEntered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salaries.resx">
+      <DependentUpon>Salaries.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailsFeeForm.resx">
       <DependentUpon>DetailsFeeForm.cs</DependentUpon>
@@ -188,8 +213,8 @@
     <EmbeddedResource Include="StudentManagement.resx">
       <DependentUpon>StudentManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubjectsForm.resx">
-      <DependentUpon>SubjectsForm.cs</DependentUpon>
+    <EmbeddedResource Include="SubjectForm.resx">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherDeatials.resx">
       <DependentUpon>TeacherDeatials.cs</DependentUpon>
@@ -248,6 +273,9 @@
       <Project>{02c7f585-bd4e-4cda-b504-8c1bbf34edf7}</Project>
       <Name>SchoolManagementSystem.DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

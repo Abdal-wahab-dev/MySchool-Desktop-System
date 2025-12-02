@@ -1,8 +1,5 @@
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.csproj.AssemblyReference.cache
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.addNewTeacher.resources
-C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.ClassManagement.resources
-C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.AddTableSubjectForm.resources
-C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.StatisticsForm.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.DetailsFeeForm.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.DetailsForm.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.DetailsGradeForm.resources
@@ -10,7 +7,6 @@ C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchoo
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.MainForm.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.Properties.Resources.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.StudentManagement.resources
-C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.SubjectsForm.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.TeacherDeatials.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.teacherManagement.resources
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.csproj.GenerateResource.cache
@@ -32,5 +28,11 @@ C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\bin\Debug\EntityF
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool.B9575D40.Up2Date
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.exe
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.pdb
-C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.exe.config
 C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.UpdateStudent.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\WindowsFormsApp1.Expenses.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\WindowsFormsApp1.Salaries.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.SubjectForm.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.DegreeEntered.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.BaseForm.resources
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool-Desktop-System.exe.config
+C:\Users\iTech\MySchool-Desktop-System\MySchool-Desktop-System\obj\Debug\MySchool_Desktop_System.RegisterForm.resources

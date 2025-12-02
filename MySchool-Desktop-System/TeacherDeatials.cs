@@ -1,4 +1,5 @@
 ﻿using SchoolManagementSystem.BLL.Services;
+using SchoolManagementSystem.BLL.Validation;
 using SchoolManagementSystem.DAL.Model;
 using System;
 using System.Collections.Generic;
@@ -18,21 +19,24 @@ using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace MySchool_Desktop_System
 {
-    public partial class TeacherDeatials : Form
+    public partial class TeacherDeatials : BaseForm
     {
         private readonly TeacherService teacherService = new TeacherService();
 
-        private Panel parentPanel;
+        
 
         private int teacherId;
+
   
-        public TeacherDeatials(Panel panel, int TeacherId)
+        public TeacherDeatials( int TeacherId)
         {
             InitializeComponent();
-            parentPanel = panel;
             teacherId = TeacherId;
-            
 
+            txtName.Validating += (s, e) => CheckName();
+            txtAddress.Validating += (s, e) => CheckAddress();
+            txtPhoneNumber.Validating += (s, e) => CheckPhone();
+            txtSalary.Validating += (s, e) => CheckSalary();
 
         }
 
@@ -50,14 +54,74 @@ namespace MySchool_Desktop_System
         {
 
         }
-        public void ShowInPanel()
+        private bool CheckName()
         {
-            this.TopLevel = false;           // لا يظهر كنافذة مستقلة
-            this.Dock = DockStyle.Fill;      // يملأ مساحة الـ Panel بالكامل
-            this.FormBorderStyle = FormBorderStyle.None; // إزالة الحدود ليتناسق مع التصميم
-            parentPanel.Controls.Add(this);  // إضافة الفورم للـ Panel
-            this.BringToFront();             // يكون أمام كل شيء
-            this.Show();
+            if (!txtName.Text.IsRequired())
+            {
+                errorProvider1.SetError(txtName, "الرجاء إدخال اسم المعلم");
+                return false;
+            }
+            if (!txtName.Text.IsValidNameFormat())
+            {
+                errorProvider1.SetError(txtName, "الاسم يجب أن يحتوي على حروف فقط");
+                return false;
+            }
+            errorProvider1.SetError(txtName, "");
+            return true;
+        }
+
+
+        private bool CheckAddress()
+        {
+            if (!txtAddress.Text.IsRequired())
+            {
+                errorProvider1.SetError(txtAddress, "العنوان مطلوب");
+                return false;
+            }
+            errorProvider1.SetError(txtAddress, "");
+            return true;
+        }
+
+
+        private bool CheckPhone()
+        {
+            if (!txtPhoneNumber.Text.IsDigitsOnly())
+            {
+                errorProvider1.SetError(txtPhoneNumber, "رقم الهاتف غير صحيح (أرقام فقط)");
+                return false;
+            }
+            if (!txtPhoneNumber.Text.IsValidPhone(9))
+            {
+                errorProvider1.SetError(txtPhoneNumber, "رقم الهاتف يجب أن يتكون من 9 أرقام فقط");
+                return false;
+            }
+
+            errorProvider1.SetError(txtPhoneNumber, "");
+            return true;
+        }
+
+
+        private bool CheckSalary()
+        {
+            if (!txtSalary.Text.IsNumeric())
+            {
+                errorProvider1.SetError(txtSalary, "  الراتب يجب أن يكون قيمة رقمية ولايقل عن 20000");
+                return false;
+            }
+            errorProvider1.SetError(txtSalary, "");
+            return true;
+        }
+
+
+        private bool CheckGender()
+        {
+            if (!ValidationExtensions.IsValidGenderSelected(rdoMale.Checked, rdoFemale.Checked))
+            {
+                errorProvider1.SetError(rdoFemale, "يجب اختيار الجنس");
+                return false;
+            }
+            errorProvider1.SetError(rdoFemale, "");
+            return true;
         }
         public void LoadTeacherData(Teacher teacher)
         {
@@ -81,67 +145,84 @@ namespace MySchool_Desktop_System
         }
         private void TeacherDeatials_Load(object sender, EventArgs e)
         {
-
+           
         }
 
-       private void Update_Click(object sender, EventArgs e)
+        private void Update_Click(object sender, EventArgs e)
         {
-         
-            try
+            bool isNameOk = CheckName();
+            bool isAddressOk = CheckAddress();
+            bool isPhoneOk = CheckPhone();
+            bool isSalaryOk = CheckSalary();
+            bool isGenderOk = CheckGender();
+
+
+            if (isNameOk && isAddressOk && isPhoneOk && isSalaryOk && isGenderOk)
             {
-                // 1. تجهيز كائن المعلم بالبيانات الجديدة من الشاشة
-                Teacher updatedTeacher = new Teacher();
 
-                // مهم جداً: يجب تحديد الـ ID لنعرف من هو المعلم الذي يتم تحديثه
-                updatedTeacher.TeacherId = teacherId;
-
-                updatedTeacher.Name = txtName.Text;
-                updatedTeacher.phoneNumber = txtPhoneNumber.Text;
-                updatedTeacher.address = txtAddress.Text;
-                updatedTeacher.dateGradute = dtpGraduateDate.Value;
-                updatedTeacher.Date = Date.Value;
-
-                // تحديد الجنس
-                if (rdoMale.Checked) updatedTeacher.gender = "Male";
-                else updatedTeacher.gender = "Female";
-
-                // تحويل الراتب
-                if (double.TryParse(txtSalary.Text, out double sal))
+                try
                 {
-                    updatedTeacher.salary = sal;
+
+                    Teacher updatedTeacher = new Teacher();
+
+
+                    updatedTeacher.TeacherId = teacherId;
+
+                    updatedTeacher.Name = txtName.Text;
+                    updatedTeacher.phoneNumber = txtPhoneNumber.Text;
+                    updatedTeacher.address = txtAddress.Text;
+                    updatedTeacher.dateGradute = dtpGraduateDate.Value;
+                    updatedTeacher.Date = Date.Value;
+
+
+                    if (rdoMale.Checked) updatedTeacher.gender = "Male";
+                    else updatedTeacher.gender = "Female";
+
+
+                    if (double.TryParse(txtSalary.Text, out double sal))
+                    {
+                        updatedTeacher.salary = sal;
+                    }
+                    else
+                    {
+                        MessageBox.Show("الرجاء إدخال رقم صحيح للراتب.");
+                        return;
+                    }
+
+                    teacherService.UpdateTeacher(updatedTeacher);
+
+
+                    MessageBox.Show("تم تحديث بيانات المعلم بنجاح!", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Close();
                 }
-                else
+                catch (ArgumentException ex)
                 {
-                    MessageBox.Show("الرجاء إدخال رقم صحيح للراتب.");
-                    return;
+
+                    MessageBox.Show(ex.Message, "خطأ في الإدخال", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+                catch (KeyNotFoundException ex)
+                {
 
-                // 2. استدعاء الخدمة (BLL) لتنفيذ التحديث
-                // هذه الدالة ستقوم بالتحقق من الشروط التي كتبتها (الاسم، الراتب، الهاتف)
-                teacherService.UpdateTeacher(updatedTeacher);
+                    MessageBox.Show(ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
 
-                // 3. رسالة نجاح وإغلاق
-                MessageBox.Show("تم تحديث بيانات المعلم بنجاح!", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               
-                this.Close();
+                    MessageBox.Show("حدث خطأ غير متوقع: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (ArgumentException ex)
+            else
             {
-                // التقاط أخطاء التحقق (مثل: الراتب سالب، الاسم فارغ) وعرضها للمستخدم
-                MessageBox.Show(ex.Message, "خطأ في الإدخال", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                // التقاط خطأ عدم وجود المعلم
-                MessageBox.Show(ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                // التقاط أي أخطاء أخرى غير متوقعة
-                MessageBox.Show("حدث خطأ غير متوقع: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                MessageBox.Show("يرجى تصحيح الحقول المؤشر عليها باللون الأحمر.", "بيانات ناقصة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

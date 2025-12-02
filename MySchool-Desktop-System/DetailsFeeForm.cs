@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagementSystem.DAL.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,27 +11,26 @@ using System.Windows.Forms;
 
 namespace MySchool_Desktop_System
 {
-    public partial class DetailsFeeForm : Form
+    public partial class DetailsFeeForm : BaseForm
     {
-        private Panel parentPanel;
-        public DetailsFeeForm(Panel panel)
+        private int studentId;
+        public DetailsFeeForm(int studentId)
         {
             InitializeComponent();
-            parentPanel = panel;
+            this.studentId = studentId;
         }
 
-        public void ShowInPanel()
-        {
-            this.TopLevel = false;           // لا يظهر كنافذة مستقلة
-            this.Dock = DockStyle.Fill;      // يملأ مساحة الـ Panel بالكامل
-            parentPanel.Controls.Add(this);  // إضافة الفورم للـ Panel
-            this.BringToFront();             // يكون أمام كل شيء
-            this.Show();
-        }
+        // ❌ تم حذف دالة ShowInPanel بالكامل
 
         private void DetailsFeeForm_Load(object sender, EventArgs e)
         {
+            // ... يمكنك هنا وضع كود جلب بيانات الرسوم ...
+        }
 
+        public void LoadStudentDetails(Student student)
+        {
+            txtName.Text = student.StudentName;
+            txtClass.Text = student.StudentClass;
         }
     }
 }

@@ -22,5 +22,17 @@ namespace MySchool_Desktop_System.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsDarkMode {
+            get {
+                return ((bool)(this["IsDarkMode"]));
+            }
+            set {
+                this["IsDarkMode"] = value;
+            }
+        }
     }
 }

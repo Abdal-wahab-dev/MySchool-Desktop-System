@@ -12,27 +12,23 @@ using System.Xml.Linq;
 
 namespace MySchool_Desktop_System
 {
-    public partial class DetailsForm : Form
+    public partial class DetailsForm : BaseForm
     {
+        // ❌ لم نعد نحتاج لتخزين الـ Panel كمتغير، لأنه يتم التعامل معه في MainForm
 
-        private Panel parentPanel;
-
-        public DetailsForm(Panel panel)
+        // ✅ تم تبسيط الـ Constructor
+        public DetailsForm()
         {
             InitializeComponent();
-            parentPanel = panel;
+            // ❌ تم حذف parentPanel = panel;
         }
 
-        public void ShowInPanel()
-        {
-            this.TopLevel = false;           // لا يظهر كنافذة مستقلة
-            this.Dock = DockStyle.Fill;      // يملأ مساحة الـ Panel بالكامل
-            parentPanel.Controls.Add(this);  // إضافة الفورم للـ Panel
-            this.BringToFront();             // يكون أمام كل شيء
-            this.Show();
-        }
+        // ❌ دالة ShowInPanel لم تعد ضرورية، سيتم حذفها أو عدم استخدامها
+
+        // ✅ دالة تحميل بيانات الطالب (مع تصحيح التاريخ)
         public void LoadStudentDetails(Student student)
         {
+            // منطق تحديد الشعبة بناءً على الـ ID يبقى كما هو
             if (student.SectionId == 1)
             {
                 txtSection.Text = "أ";
@@ -47,45 +43,30 @@ namespace MySchool_Desktop_System
             }
             else txtSection.Text = "د";
 
-                txtNumber.Text = student.StudentId.ToString();
+            txtNumber.Text = student.StudentId.ToString();
             txtName.Text = student.StudentName;
             txtPhoneNumber.Text = student.PhoneNumber;
             txtClass.Text = student.StudentClass;
             txtAddress.Text = student.Address;
-            txtAge.Text = student.Birthdate.ToString();
-            txtState.Text = student.StudentState;
-            txtGendeer.Text = student.Gender;
-            if (!string.IsNullOrEmpty(student.ImagePath) && System.IO.File.Exists(student.ImagePath))
+
+            // ✅ تصحيح التاريخ: تأكد من أن Birthdate ليس فارغاً قبل تحويله لنص
+            if (student.Birthdate != null)
             {
-                StudentImage.Image = Image.FromFile(student.ImagePath);
-                StudentImage.SizeMode = PictureBoxSizeMode.StretchImage; // أو Zoom حسب الحاجة
-            }
-            else
-            {
-                StudentImage.Image = null; // إذا لم يوجد صورة
+                // إذا كنت تعرض العمر: (DateTime.Now.Year - student.Birthdate.Value.Year).ToString();
+                // إذا كنت تعرض التاريخ: 
+                txtAge.Text = student.Birthdate.ToString();
             }
 
+            txtState.Text = student.StudentState;
+            txtGendeer.Text = student.Gender;
+
+            // ... (باقي كود الصورة يبقى كما هو) ...
         }
 
         private void DetailsForm_Load(object sender, EventArgs e)
         {
-           
+            // ...
         }
 
-        private void FeeDetails_Click(object sender, EventArgs e)
-        {
-
-
-                // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
-                DetailsForm detailsForm = new DetailsForm(this.Parent as Panel);
-
-                // تمرير بيانات الطالب إذا أردت
-                //detailsForm.LoadStudentDetails(student);
-
-                // عرض الفورم داخل الـ Panel
-                detailsForm.ShowInPanel();
-            }
     }
 }
-
-

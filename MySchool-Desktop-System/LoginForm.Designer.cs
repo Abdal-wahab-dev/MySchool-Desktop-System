@@ -39,6 +39,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.comboType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
@@ -117,9 +118,9 @@
             this.btnLogin.FillColor = System.Drawing.SystemColors.Highlight;
             this.btnLogin.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(657, 541);
+            this.btnLogin.Location = new System.Drawing.Point(828, 541);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(280, 45);
+            this.btnLogin.Size = new System.Drawing.Size(120, 45);
             this.btnLogin.TabIndex = 15;
             this.btnLogin.Text = "تسجيل";
             // 
@@ -214,12 +215,32 @@
             this.comboType.Size = new System.Drawing.Size(280, 36);
             this.comboType.TabIndex = 16;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.SystemColors.Highlight;
+            this.guna2Button1.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(657, 541);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(151, 45);
+            this.guna2Button1.TabIndex = 17;
+            this.guna2Button1.Text = "إنشاء حساب";
+            this.guna2Button1.Click += new System.EventHandler(this.btnAddUser_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1060, 770);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.comboType);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.guna2PictureBox4);
@@ -260,5 +281,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2ComboBox comboType;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

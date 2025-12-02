@@ -13,14 +13,14 @@ namespace SchoolManagementSystem.BLL.Services
         private readonly UserRepository userRepo = new UserRepository();
 
         // نرجع كائن User بالكامل لنستفيد من خاصية Type لاحقاً
-        public User ValidateUser(string userName, string password)
+        public User ValidateUser(string userName, string password ,string type)
         {
-            if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(userName) || string.IsNullOrWhiteSpace(password) || string.IsNullOrEmpty(type))
             {
                 return null;
             }
 
-            return userRepo.Login(userName, password);
+            return userRepo.Login(userName, password , type);
         }
 
         public List<string> GetUserTypes()

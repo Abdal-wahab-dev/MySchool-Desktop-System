@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolManagementSystem.DAL.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,29 +8,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace MySchool_Desktop_System
 {
-    public partial class DetailsGradeForm : Form
+    public partial class DetailsGradeForm : BaseForm
     {
-        private Panel parentPanel;
-        public DetailsGradeForm(Panel panel)
+        private int studentId;
+        public DetailsGradeForm(int StudentId)
         {
             InitializeComponent();
-            parentPanel = panel;
+            studentId = StudentId;
         }
 
-        public void ShowInPanel()
-        {
-            this.TopLevel = false;           // لا يظهر كنافذة مستقلة
-            this.Dock = DockStyle.Fill;      // يملأ مساحة الـ Panel بالكامل
-            parentPanel.Controls.Add(this);  // إضافة الفورم للـ Panel
-            this.BringToFront();             // يكون أمام كل شيء
-            this.Show();
-        }
+        
         private void DetailsGradeForm_Load(object sender, EventArgs e)
         {
-
+           
+        }
+        public void LoadStudentDetails(Student student)
+        {
+            txtName.Text = student.StudentName;
+            txtClass.Text = student.StudentClass;
         }
     }
 }

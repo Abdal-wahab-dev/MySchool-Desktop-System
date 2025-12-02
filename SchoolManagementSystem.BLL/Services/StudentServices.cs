@@ -44,7 +44,7 @@ namespace SchoolManagementSystem.BLL.Services
             return studentService.GetSections();
         }
 
-
+        
 
     }
 }

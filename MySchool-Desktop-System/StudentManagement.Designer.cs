@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -68,21 +69,24 @@
             this.comboSection = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.grpState = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpGender = new System.Windows.Forms.GroupBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvstudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StudentImage)).BeginInit();
             this.grpState.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grpGender.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(12, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1029, 59);
@@ -91,6 +95,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(447, 15);
@@ -101,12 +106,13 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.btnModifyStudent);
             this.panel3.Controls.Add(this.btnRemoveStudent);
             this.panel3.Controls.Add(this.btnAddStudent);
             this.panel3.Controls.Add(this.menuStrip1);
+            this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(12, 383);
             this.panel3.Name = "panel3";
             this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -125,7 +131,7 @@
             this.btnModifyStudent.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnModifyStudent.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModifyStudent.ForeColor = System.Drawing.Color.Black;
-            this.btnModifyStudent.Location = new System.Drawing.Point(19, 29);
+            this.btnModifyStudent.Location = new System.Drawing.Point(45, 17);
             this.btnModifyStudent.Name = "btnModifyStudent";
             this.btnModifyStudent.Size = new System.Drawing.Size(158, 45);
             this.btnModifyStudent.TabIndex = 2;
@@ -143,8 +149,8 @@
             this.btnRemoveStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnRemoveStudent.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRemoveStudent.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveStudent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRemoveStudent.Location = new System.Drawing.Point(251, 31);
+            this.btnRemoveStudent.ForeColor = System.Drawing.Color.Black;
+            this.btnRemoveStudent.Location = new System.Drawing.Point(301, 17);
             this.btnRemoveStudent.Name = "btnRemoveStudent";
             this.btnRemoveStudent.Size = new System.Drawing.Size(149, 45);
             this.btnRemoveStudent.TabIndex = 1;
@@ -162,8 +168,8 @@
             this.btnAddStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddStudent.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddStudent.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStudent.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddStudent.Location = new System.Drawing.Point(540, 31);
+            this.btnAddStudent.ForeColor = System.Drawing.Color.Black;
+            this.btnAddStudent.Location = new System.Drawing.Point(550, 17);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(152, 45);
             this.btnAddStudent.TabIndex = 0;
@@ -172,6 +178,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.ForeColor = System.Drawing.Color.Black;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuStripDetails});
@@ -224,21 +232,21 @@
             // dgvstudent
             // 
             this.dgvstudent.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvstudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.dgvstudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvstudent.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgvstudent.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvstudent.BackgroundColor = System.Drawing.SystemColors.AppWorkspace;
             this.dgvstudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dgvstudent.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvstudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Cambria", 12F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvstudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvstudent.ColumnHeadersHeight = 36;
             this.dgvstudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvstudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -247,101 +255,109 @@
             this.ClassName,
             this.State,
             this.PhoneNumber});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvstudent.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvstudent.GridColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvstudent.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvstudent.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.dgvstudent.Location = new System.Drawing.Point(12, 501);
             this.dgvstudent.Name = "dgvstudent";
+            this.dgvstudent.ReadOnly = true;
             this.dgvstudent.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgvstudent.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvstudent.RowHeadersVisible = false;
             this.dgvstudent.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvstudent.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvstudent.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvstudent.RowTemplate.Height = 26;
             this.dgvstudent.Size = new System.Drawing.Size(1029, 171);
             this.dgvstudent.TabIndex = 2;
-            this.dgvstudent.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvstudent.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Light;
+            this.dgvstudent.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
             this.dgvstudent.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvstudent.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvstudent.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvstudent.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvstudent.ThemeStyle.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvstudent.ThemeStyle.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dgvstudent.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvstudent.ThemeStyle.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgvstudent.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
+            this.dgvstudent.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.dgvstudent.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvstudent.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.dgvstudent.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvstudent.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Cambria", 12F);
+            this.dgvstudent.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvstudent.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvstudent.ThemeStyle.HeaderStyle.Height = 36;
-            this.dgvstudent.ThemeStyle.ReadOnly = false;
+            this.dgvstudent.ThemeStyle.ReadOnly = true;
             this.dgvstudent.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvstudent.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvstudent.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.dgvstudent.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvstudent.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvstudent.ThemeStyle.RowsStyle.Height = 26;
-            this.dgvstudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvstudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvstudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            this.dgvstudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // StudentId
             // 
             this.StudentId.HeaderText = "الرقم";
             this.StudentId.MinimumWidth = 6;
             this.StudentId.Name = "StudentId";
+            this.StudentId.ReadOnly = true;
             // 
             // StudentName
             // 
             this.StudentName.HeaderText = "الاسم";
             this.StudentName.MinimumWidth = 6;
             this.StudentName.Name = "StudentName";
+            this.StudentName.ReadOnly = true;
             // 
             // ClassName
             // 
             this.ClassName.HeaderText = "الصف";
             this.ClassName.MinimumWidth = 6;
             this.ClassName.Name = "ClassName";
+            this.ClassName.ReadOnly = true;
             // 
             // State
             // 
             this.State.HeaderText = "الحالة";
             this.State.MinimumWidth = 6;
             this.State.Name = "State";
+            this.State.ReadOnly = true;
             // 
             // PhoneNumber
             // 
             this.PhoneNumber.HeaderText = "رقم التواصل";
             this.PhoneNumber.MinimumWidth = 6;
             this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.ReadOnly = true;
             // 
             // comboClassName
             // 
             this.comboClassName.BackColor = System.Drawing.Color.Transparent;
+            this.comboClassName.BorderColor = System.Drawing.Color.Silver;
             this.comboClassName.BorderRadius = 10;
             this.comboClassName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboClassName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboClassName.FillColor = System.Drawing.SystemColors.ControlLight;
             this.comboClassName.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboClassName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboClassName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboClassName.ForeColor = System.Drawing.Color.Black;
             this.comboClassName.ItemHeight = 30;
+            this.comboClassName.ItemsAppearance.BackColor = System.Drawing.Color.White;
+            this.comboClassName.ItemsAppearance.ForeColor = System.Drawing.Color.Black;
             this.comboClassName.Location = new System.Drawing.Point(544, 190);
             this.comboClassName.Name = "comboClassName";
             this.comboClassName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboClassName.Size = new System.Drawing.Size(397, 36);
             this.comboClassName.TabIndex = 22;
-            this.comboClassName.SelectedIndexChanged += new System.EventHandler(this.comboClassName_SelectedIndexChanged);
             // 
             // txtAddress
             // 
-            this.txtAddress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
+            this.txtAddress.BorderColor = System.Drawing.Color.Silver;
             this.txtAddress.BorderRadius = 10;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.DefaultText = "";
@@ -349,7 +365,6 @@
             this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAddress.FillColor = System.Drawing.SystemColors.ControlLight;
             this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.Black;
@@ -366,6 +381,7 @@
             // lblClassName
             // 
             this.lblClassName.AutoSize = true;
+            this.lblClassName.BackColor = System.Drawing.Color.Transparent;
             this.lblClassName.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClassName.ForeColor = System.Drawing.Color.Black;
             this.lblClassName.Location = new System.Drawing.Point(978, 206);
@@ -377,7 +393,7 @@
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
+            this.txtPhoneNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtPhoneNumber.BorderRadius = 10;
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhoneNumber.DefaultText = "";
@@ -385,7 +401,6 @@
             this.txtPhoneNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPhoneNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhoneNumber.FillColor = System.Drawing.SystemColors.ControlLight;
             this.txtPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhoneNumber.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.Black;
@@ -401,7 +416,7 @@
             // 
             // txtStudentName
             // 
-            this.txtStudentName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
+            this.txtStudentName.BorderColor = System.Drawing.Color.Silver;
             this.txtStudentName.BorderRadius = 10;
             this.txtStudentName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtStudentName.DefaultText = "";
@@ -409,7 +424,6 @@
             this.txtStudentName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtStudentName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtStudentName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStudentName.FillColor = System.Drawing.SystemColors.ControlLight;
             this.txtStudentName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtStudentName.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentName.ForeColor = System.Drawing.Color.Black;
@@ -426,6 +440,7 @@
             // lblBirthdate
             // 
             this.lblBirthdate.AutoSize = true;
+            this.lblBirthdate.BackColor = System.Drawing.Color.Transparent;
             this.lblBirthdate.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirthdate.ForeColor = System.Drawing.Color.Black;
             this.lblBirthdate.Location = new System.Drawing.Point(967, 321);
@@ -438,6 +453,7 @@
             // lblStudentName
             // 
             this.lblStudentName.AutoSize = true;
+            this.lblStudentName.BackColor = System.Drawing.Color.Transparent;
             this.lblStudentName.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudentName.ForeColor = System.Drawing.Color.Black;
             this.lblStudentName.Location = new System.Drawing.Point(955, 86);
@@ -451,6 +467,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.Black;
             this.lblAddress.Location = new System.Drawing.Point(978, 146);
@@ -463,6 +480,7 @@
             // lblPhoneNumber
             // 
             this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblPhoneNumber.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.lblPhoneNumber.Location = new System.Drawing.Point(966, 261);
@@ -477,8 +495,9 @@
             this.dtpBirthdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtpBirthdate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(77)))), ((int)(((byte)(118)))));
             this.dtpBirthdate.Checked = true;
-            this.dtpBirthdate.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.dtpBirthdate.FillColor = System.Drawing.Color.White;
             this.dtpBirthdate.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthdate.ForeColor = System.Drawing.Color.Black;
             this.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpBirthdate.Location = new System.Drawing.Point(544, 311);
             this.dtpBirthdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -492,6 +511,7 @@
             // rdoFemale
             // 
             this.rdoFemale.AutoSize = true;
+            this.rdoFemale.BackColor = System.Drawing.Color.Transparent;
             this.rdoFemale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdoFemale.CheckedState.BorderThickness = 0;
             this.rdoFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -499,7 +519,7 @@
             this.rdoFemale.CheckedState.InnerOffset = -4;
             this.rdoFemale.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFemale.ForeColor = System.Drawing.Color.Black;
-            this.rdoFemale.Location = new System.Drawing.Point(49, 23);
+            this.rdoFemale.Location = new System.Drawing.Point(46, 18);
             this.rdoFemale.Name = "rdoFemale";
             this.rdoFemale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rdoFemale.Size = new System.Drawing.Size(52, 24);
@@ -509,18 +529,20 @@
             this.rdoFemale.UncheckedState.BorderThickness = 2;
             this.rdoFemale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rdoFemale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdoFemale.UseVisualStyleBackColor = false;
             // 
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
+            this.rdoMale.BackColor = System.Drawing.Color.Transparent;
             this.rdoMale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdoMale.CheckedState.BorderThickness = 0;
             this.rdoMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdoMale.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdoMale.CheckedState.InnerOffset = -4;
-            this.rdoMale.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoMale.Font = new System.Drawing.Font("Cambria", 10.2F);
             this.rdoMale.ForeColor = System.Drawing.Color.Black;
-            this.rdoMale.Location = new System.Drawing.Point(134, 23);
+            this.rdoMale.Location = new System.Drawing.Point(151, 18);
             this.rdoMale.Name = "rdoMale";
             this.rdoMale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rdoMale.Size = new System.Drawing.Size(51, 24);
@@ -530,6 +552,7 @@
             this.rdoMale.UncheckedState.BorderThickness = 2;
             this.rdoMale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rdoMale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdoMale.UseVisualStyleBackColor = false;
             // 
             // btnAddImage
             // 
@@ -540,7 +563,7 @@
             this.btnAddImage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddImage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddImage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddImage.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAddImage.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddImage.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddImage.ForeColor = System.Drawing.Color.Black;
             this.btnAddImage.Location = new System.Drawing.Point(48, 298);
@@ -548,11 +571,12 @@
             this.btnAddImage.Size = new System.Drawing.Size(228, 45);
             this.btnAddImage.TabIndex = 37;
             this.btnAddImage.Text = "إدراج صورة";
-            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
             // 
             // StudentImage
             // 
+            this.StudentImage.BackColor = System.Drawing.Color.Transparent;
             this.StudentImage.FillColor = System.Drawing.SystemColors.ControlLight;
+            this.StudentImage.ForeColor = System.Drawing.Color.Black;
             this.StudentImage.ImageRotate = 0F;
             this.StudentImage.Location = new System.Drawing.Point(48, 76);
             this.StudentImage.Name = "StudentImage";
@@ -564,6 +588,7 @@
             // rdoUnsuccessful
             // 
             this.rdoUnsuccessful.AutoSize = true;
+            this.rdoUnsuccessful.BackColor = System.Drawing.Color.Transparent;
             this.rdoUnsuccessful.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdoUnsuccessful.CheckedState.BorderThickness = 0;
             this.rdoUnsuccessful.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -571,7 +596,7 @@
             this.rdoUnsuccessful.CheckedState.InnerOffset = -4;
             this.rdoUnsuccessful.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoUnsuccessful.ForeColor = System.Drawing.Color.Black;
-            this.rdoUnsuccessful.Location = new System.Drawing.Point(35, 29);
+            this.rdoUnsuccessful.Location = new System.Drawing.Point(20, 20);
             this.rdoUnsuccessful.Name = "rdoUnsuccessful";
             this.rdoUnsuccessful.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rdoUnsuccessful.Size = new System.Drawing.Size(63, 24);
@@ -581,10 +606,12 @@
             this.rdoUnsuccessful.UncheckedState.BorderThickness = 2;
             this.rdoUnsuccessful.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rdoUnsuccessful.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdoUnsuccessful.UseVisualStyleBackColor = false;
             // 
             // rdoActive
             // 
             this.rdoActive.AutoSize = true;
+            this.rdoActive.BackColor = System.Drawing.Color.Transparent;
             this.rdoActive.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdoActive.CheckedState.BorderThickness = 0;
             this.rdoActive.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -592,7 +619,7 @@
             this.rdoActive.CheckedState.InnerOffset = -4;
             this.rdoActive.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoActive.ForeColor = System.Drawing.Color.Black;
-            this.rdoActive.Location = new System.Drawing.Point(132, 29);
+            this.rdoActive.Location = new System.Drawing.Point(129, 20);
             this.rdoActive.Name = "rdoActive";
             this.rdoActive.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.rdoActive.Size = new System.Drawing.Size(53, 24);
@@ -602,19 +629,22 @@
             this.rdoActive.UncheckedState.BorderThickness = 2;
             this.rdoActive.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rdoActive.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdoActive.UseVisualStyleBackColor = false;
             // 
             // comboSection
             // 
             this.comboSection.BackColor = System.Drawing.Color.Transparent;
+            this.comboSection.BorderColor = System.Drawing.Color.Silver;
             this.comboSection.BorderRadius = 10;
             this.comboSection.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboSection.FillColor = System.Drawing.SystemColors.ControlLight;
             this.comboSection.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboSection.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.comboSection.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboSection.ForeColor = System.Drawing.Color.Black;
             this.comboSection.ItemHeight = 30;
+            this.comboSection.ItemsAppearance.BackColor = System.Drawing.Color.White;
+            this.comboSection.ItemsAppearance.ForeColor = System.Drawing.Color.Black;
             this.comboSection.Location = new System.Drawing.Point(317, 140);
             this.comboSection.Name = "comboSection";
             this.comboSection.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -624,6 +654,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(459, 109);
@@ -635,27 +666,36 @@
             // 
             // grpState
             // 
+            this.grpState.BackColor = System.Drawing.Color.Transparent;
             this.grpState.Controls.Add(this.rdoActive);
             this.grpState.Controls.Add(this.rdoUnsuccessful);
-            this.grpState.Location = new System.Drawing.Point(282, 182);
+            this.grpState.ForeColor = System.Drawing.Color.Black;
+            this.grpState.Location = new System.Drawing.Point(282, 190);
             this.grpState.Name = "grpState";
             this.grpState.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.grpState.Size = new System.Drawing.Size(243, 66);
+            this.grpState.Size = new System.Drawing.Size(243, 59);
             this.grpState.TabIndex = 46;
             this.grpState.TabStop = false;
             this.grpState.Text = "الحالة";
             // 
-            // groupBox1
+            // grpGender
             // 
-            this.groupBox1.Controls.Add(this.rdoMale);
-            this.groupBox1.Controls.Add(this.rdoFemale);
-            this.groupBox1.Location = new System.Drawing.Point(282, 261);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(243, 58);
-            this.groupBox1.TabIndex = 47;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "الجنس";
+            this.grpGender.BackColor = System.Drawing.Color.Transparent;
+            this.grpGender.Controls.Add(this.rdoMale);
+            this.grpGender.Controls.Add(this.rdoFemale);
+            this.grpGender.ForeColor = System.Drawing.Color.Black;
+            this.grpGender.Location = new System.Drawing.Point(282, 280);
+            this.grpGender.Name = "grpGender";
+            this.grpGender.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grpGender.Size = new System.Drawing.Size(243, 61);
+            this.grpGender.TabIndex = 47;
+            this.grpGender.TabStop = false;
+            this.grpGender.Text = "الجنس";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.RightToLeft = true;
             // 
             // StudentManagement
             // 
@@ -663,7 +703,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1060, 770);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpGender);
             this.Controls.Add(this.grpState);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboSection);
@@ -682,6 +722,7 @@
             this.Controls.Add(this.dgvstudent);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentManagement";
             this.Load += new System.EventHandler(this.StudentManagement_Load);
@@ -695,8 +736,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.StudentImage)).EndInit();
             this.grpState.ResumeLayout(false);
             this.grpState.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpGender.ResumeLayout(false);
+            this.grpGender.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,7 +772,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox comboSection;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpState;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpGender;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentId;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClassName;
@@ -741,5 +783,6 @@
         private System.Windows.Forms.ToolStripMenuItem تفاصيلالرسومToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تفاصيلالدرجاتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuStripDetails;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -1,47 +1,149 @@
 ﻿using SchoolManagementSystem.BLL.Services;
+using SchoolManagementSystem.BLL.Validation;
 using SchoolManagementSystem.DAL.Model;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace MySchool_Desktop_System
 {
-    public partial class addNewTeacher : Form
+    public partial class addNewTeacher : BaseForm
     {
-        // تهيئة طبقة الخدمة للتعامل مع منطق المعلمين
         private readonly TeacherService teacherService = new TeacherService();
 
-        // متغير لحفظ الـ Panel الأب الذي يُعرض فيه هذا الفورم
-        private Panel parentPanel;
-        public teacherManagement managementForm;
-
-        public addNewTeacher(Panel panel, teacherManagement form)
+        
+        public addNewTeacher()
         {
             InitializeComponent();
-            parentPanel = panel;
-            managementForm = form;
+
+            
+            txtName.Validating += (s, e) => CheckName();
+            txtAddress.Validating += (s, e) => CheckAddress();
+            txtPhone.Validating += (s, e) => CheckPhone();
+            txtSalary.Validating += (s, e) => CheckSalary();
         }
 
-        // دالة لعرض الفورم داخل الـ Panel
-        public void ShowInPanel()
+        private bool CheckName()
         {
-            this.TopLevel = false;           // لا يظهر كنافذة مستقلة
-            this.Dock = DockStyle.Fill;      // يملأ مساحة الـ Panel بالكامل
-            this.FormBorderStyle = FormBorderStyle.None; // إزالة الحدود ليتناسق مع التصميم
-            parentPanel.Controls.Add(this);  // إضافة الفورم للـ Panel
-            this.BringToFront();             // يكون أمام كل شيء
-            this.Show();
+            if (!txtName.Text.IsRequired())
+            {
+                errorProvider1.SetError(txtName, "الرجاء إدخال اسم المعلم");
+                return false;
+            }
+            if (!txtName.Text.IsValidNameFormat())
+            {
+                errorProvider1.SetError(txtName, "الاسم يجب أن يحتوي على حروف فقط");
+                return false;
+            }
+            errorProvider1.SetError(txtName, ""); 
+            return true;
         }
 
-        // حدث زر الحفظ
-        private void SaveTeacher_Click(object sender, EventArgs e)
-        {
-           
-          
-        }
         
+        private bool CheckAddress()
+        {
+            if (!txtAddress.Text.IsRequired())
+            {
+                errorProvider1.SetError(txtAddress, "العنوان مطلوب");
+                return false;
+            }
+            errorProvider1.SetError(txtAddress, "");
+            return true;
+        }
 
-        // دالة لتنظيف الحقول
+        
+        private bool CheckPhone()
+        {
+            if (!txtPhone.Text.IsDigitsOnly())
+            {
+                errorProvider1.SetError(txtPhone, "رقم الهاتف غير صحيح (أرقام فقط)");
+                return false;
+            }
+            if (!txtPhone.Text.IsValidPhone(9))
+            {
+                errorProvider1.SetError(txtPhone, "رقم الهاتف يجب أن يتكون من 9 أرقام فقط");
+                return false;
+            }
+
+            errorProvider1.SetError(txtPhone, ""); 
+            return true;
+        }
+
+        
+        private bool CheckSalary()
+        {
+            if (!txtSalary.Text.IsNumeric())
+            {
+                errorProvider1.SetError(txtSalary, "  الراتب يجب أن يكون قيمة رقمية ولايقل عن 20000");
+                return false;
+            }
+            errorProvider1.SetError(txtSalary, "");
+            return true;
+        }
+
+       
+        private bool CheckGender()
+        {
+            if (!ValidationExtensions.IsValidGenderSelected(rdoMale.Checked, rdoFemale.Checked))
+            {
+                errorProvider1.SetError(rdoFemale, "يجب اختيار الجنس");
+                return false;
+            }
+            errorProvider1.SetError(rdoFemale, "");
+            return true;
+        }
+        private void SaveTeacher_Click_1(object sender, EventArgs e)
+        {
+            
+            bool isNameOk = CheckName();
+            bool isAddressOk = CheckAddress();
+            bool isPhoneOk = CheckPhone();
+            bool isSalaryOk = CheckSalary();
+            bool isGenderOk = CheckGender();
+
+            
+            if (isNameOk && isAddressOk && isPhoneOk && isSalaryOk && isGenderOk)
+            {
+                try
+                {
+                    
+                    var teacher = new Teacher
+                    {
+                        Name = txtName.Text.Trim(),
+                        address = txtAddress.Text.Trim(),
+                        phoneNumber = txtPhone.Text.Trim(),
+                        dateGradute = dtpGraduateDate.Value,
+                        Date = dtpDate.Value,
+                        gender = rdoMale.Checked ? "ذكر" : "انثى",
+                        salary = double.Parse(txtSalary.Text.Trim()) 
+                    };
+
+                    
+                    teacherService.AddTeacher(teacher);
+
+                    MessageBox.Show("تم إضافة المعلم بنجاح.", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    ClearFormControls();
+                     
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("حدث خطأ أثناء الحفظ: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                
+                MessageBox.Show("يرجى تصحيح الحقول المؤشر عليها باللون الأحمر.", "بيانات ناقصة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+       
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
         private void ClearFormControls()
         {
             txtName.Clear();
@@ -56,43 +158,11 @@ namespace MySchool_Desktop_System
             dtpDate.Value = DateTime.Today;
         }
 
-        // زر الرجوع أو الإلغاء (اختياري - إذا كان لديك زر للعودة)
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void SaveTeacher_Click_1(object sender, EventArgs e)
+        private void addNewTeacher_Load(object sender, EventArgs e)
         {
 
-            string gender = "";
-            if (rdoMale.Checked) gender = "ذكر";
-            else if (rdoFemale.Checked) gender = "انثى";
-
-
-            var teacher = new Teacher
-            {
-                Name = txtName.Text.Trim(),
-                address = txtAddress.Text.Trim(),
-                phoneNumber = txtPhone.Text.Trim(),
-                dateGradute = dtpGraduateDate.Value,
-                Date = dtpDate.Value,
-                gender = gender,
-                salary = double.Parse(txtSalary.Text.Trim())
-
-
-
-            };
-            teacherService.AddTeacher(teacher);
-            managementForm.LoadTeachersData();
-
-            // 6. رسالة النجاح
-            MessageBox.Show("تم إضافة المعلم بنجاح وتخزين البيانات في قاعدة البيانات.", "نجاح العملية", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // تفريغ الحقول لإضافة معلم آخر
-            ClearFormControls();
-
-            // ملاحظة: لتحديث الجدول في الشاشة السابقة، ستحتاج إلى إعادة تحميل البيانات في الفورم الأب.
         }
+
+       
     }
 }

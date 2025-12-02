@@ -1,5 +1,6 @@
 ﻿
 using SchoolManagementSystem.BLL.Services;
+using SchoolManagementSystem.BLL.Validation;
 using SchoolManagementSystem.DAL.Model;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ using static System.Windows.Forms.AxHost;
 
 namespace MySchool_Desktop_System
 {
-    public partial class StudentManagement : Form
+    public partial class StudentManagement : BaseForm
     {
         private bool isLoading = false;
         private List<Section> allSections;
@@ -28,7 +29,15 @@ namespace MySchool_Desktop_System
 
             InitializeComponent();
             menuStrip1.AutoSize = false;    // إيقاف الحجم التلقائي
-            menuStrip1.Height = 50;         // الارتفاع الجديد
+            menuStrip1.Height = 50;
+            txtStudentName.Validating += (s, e) => CheckName();
+            txtAddress.Validating += (s, e) => CheckAddress();
+            txtPhoneNumber.Validating += (s, e) => CheckPhone();
+            comboSection.Validating += (s, e) => CheckSection();
+            comboClassName.Validating += (s, e) => CheckClass();
+            grpGender.Validating += (s, e) => CheckGender();
+            dtpBirthdate.Validating += (s, e) => CheckBirthdate();
+            grpState.Validating += (s, e) => CheckState();// الارتفاع الجديد
 
 
         }
@@ -65,6 +74,7 @@ namespace MySchool_Desktop_System
            // لضبط الارتفاع حسب النص
 
             LoadStudent();
+            
         }
 
 
@@ -73,56 +83,177 @@ namespace MySchool_Desktop_System
             List<Student> students = studentServices.GetStudent();
             dgvstudent.DataSource = students;
         }
+        private bool CheckName()
+        {
+            if (!txtStudentName.Text.IsRequired())
+            {
+                errorProvider1.SetError(txtStudentName, "الرجاء إدخال اسم الطالب");
+                return false;
+            }
+            if (!txtStudentName.Text.IsValidNameFormat())
+            {
+                errorProvider1.SetError(txtStudentName, "الاسم يجب أن يحتوي على حروف فقط");
+                return false;
+            }
+            errorProvider1.SetError(txtStudentName, "");
+            return true;
+        }
+        private bool CheckAddress()
+        {
+            if (!txtAddress.Text.IsRequired())
+            {
+                errorProvider1.SetError(txtAddress, "العنوان مطلوب");
+                return false;
+            }
+            errorProvider1.SetError(txtAddress, "");
+            return true;
+        }
+        private bool CheckPhone()
+        {
+            if (!txtPhoneNumber.Text.IsDigitsOnly())
+            {
+                errorProvider1.SetError(txtPhoneNumber, "رقم الهاتف غير صحيح (أرقام فقط)");
+                return false;
+            }
+            if (!txtPhoneNumber.Text.IsValidPhone(9))
+            {
+                errorProvider1.SetError(txtPhoneNumber, "رقم الهاتف يجب أن يتكون من 9 أرقام فقط");
+                return false;
+            }
 
+            errorProvider1.SetError(txtPhoneNumber, "");
+            return true;
+        }
+        private bool CheckGender()
+        {
+            if (!ValidationExtensions.IsValidGenderSelected(rdoMale.Checked, rdoFemale.Checked))
+            {
+                errorProvider1.SetError(rdoFemale, "يجب اختيار الجنس");
+                return false;
+            }
+            errorProvider1.SetError(rdoFemale, "");
+            return true;
+        }
+        private bool CheckState()
+        {
+            if (!ValidationExtensions.IsValidGenderSelected(rdoActive.Checked, rdoUnsuccessful.Checked))
+            {
+                errorProvider1.SetError(rdoUnsuccessful, "يجب اختيار الحالة");
+                return false;
+            }
+            errorProvider1.SetError(rdoUnsuccessful, "");
+            return true;
+        }
+        private bool CheckClass()
+        {
+            string selectedValue = comboClassName.SelectedValue?.ToString();
+
+
+            if (!selectedValue.IsIdSelected())
+            {
+                errorProvider1.SetError(comboClassName, "الرجاء اختيار الصف");
+                return false;
+            }
+
+            errorProvider1.SetError(comboClassName, "");
+            return true;
+        }
+
+        private bool CheckSection()
+        {
+            string selectedValue = comboSection.SelectedValue?.ToString();
+
+
+            if (!selectedValue.IsIdSelected())
+            {
+                errorProvider1.SetError(comboSection, "الرجاء اختيار الشعبة");
+                return false;
+            }
+
+            errorProvider1.SetError(comboSection, "");
+            return true;
+        }
+
+        private bool CheckBirthdate()
+        {
+            string selectedValue = dtpBirthdate.Value.ToString();
+
+
+            if (!selectedValue.IsIdSelected())
+            {
+                errorProvider1.SetError(dtpBirthdate, "الرجاء اختيار التاريخ");
+                return false;
+            }
+
+            errorProvider1.SetError(dtpBirthdate, "");
+            return true;
+        }
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            try
+            bool isNameOk = CheckName();
+            bool isAddressOk = CheckAddress();
+            bool isPhoneOk = CheckPhone();
+            bool isClassOk = CheckClass();
+            bool isSection = CheckSection();
+            bool isGenderOk = CheckGender();
+            bool isStateOk = CheckState();
+            bool isBirthdateOk = CheckBirthdate();
+
+            if (isNameOk && isAddressOk && isPhoneOk && isGenderOk && isClassOk && isSection && isStateOk && isBirthdateOk)
             {
-                // التحقق من صحة المدخلات الأساسية
-                if (string.IsNullOrWhiteSpace(txtStudentName.Text))
+                try
                 {
-                    MessageBox.Show("الرجاء إدخال اسم الطالب");
-                    return;
+                    // التحقق من صحة المدخلات الأساسية
+                    if (string.IsNullOrWhiteSpace(txtStudentName.Text))
+                    {
+                        MessageBox.Show("الرجاء إدخال اسم الطالب");
+                        return;
+                    }
+
+                    if (comboSection.SelectedValue == null)
+                    {
+                        MessageBox.Show("الرجاء اختيار الشعبة");
+                        return;
+                    }
+
+                    // تحديد الحالة
+                    string state = rdoActive.Checked ? "نشط" : "راسب"; // افتراضي
+
+                    // تحديد الجنس
+                    string gender = rdoMale.Checked ? "ذكر" : "انثى";
+
+                    var student = new Student
+                    {
+                        StudentName = txtStudentName.Text.Trim(),
+                        Address = txtAddress.Text.Trim(),
+                        StudentClass = comboClassName.Text,
+
+                        // تحويل آمن للـ ID
+                        SectionId = Convert.ToInt32(comboSection.SelectedValue),
+
+                        PhoneNumber = txtPhoneNumber.Text.Trim(),
+                        Birthdate = dtpBirthdate.Value,
+                        Gender = gender,
+                        StudentState = state,
+                        ImagePath = StudentImage.ImageLocation,
+                    };
+
+                    studentServices.addSudent(student);
+
+                    MessageBox.Show("تمت الإضافة بنجاح");
+
+                    // إعادة تحميل الجدول لرؤية الطالب الجديد
+                    LoadStudent();
                 }
-
-                if (comboSection.SelectedValue == null)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("الرجاء اختيار الشعبة");
-                    return;
+                    MessageBox.Show("حدث خطأ أثناء الإضافة: " + ex.Message);
                 }
-
-                // تحديد الحالة
-                string state = rdoActive.Checked ? "نشط" : "راسب"; // افتراضي
-
-                // تحديد الجنس
-                string gender = rdoMale.Checked ? "ذكر" : "انثى";
-
-                var student = new Student
-                {
-                    StudentName = txtStudentName.Text.Trim(),
-                    Address = txtAddress.Text.Trim(),
-                    StudentClass = comboClassName.Text,
-
-                    // تحويل آمن للـ ID
-                    SectionId = Convert.ToInt32(comboSection.SelectedValue),
-
-                    PhoneNumber = txtPhoneNumber.Text.Trim(),
-                    Birthdate = dtpBirthdate.Value,
-                    Gender = gender,
-                    StudentState = state,
-                    ImagePath = StudentImage.ImageLocation,
-                };
-
-                studentServices.addSudent(student);
-
-                MessageBox.Show("تمت الإضافة بنجاح");
-
-                // إعادة تحميل الجدول لرؤية الطالب الجديد
-                LoadStudent();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("حدث خطأ أثناء الإضافة: " + ex.Message);
+
+                MessageBox.Show("يرجى تصحيح الحقول المؤشر عليها باللون الأحمر.", "بيانات ناقصة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -156,27 +287,27 @@ namespace MySchool_Desktop_System
 
         private void btnModifyStudent_Click(object sender, EventArgs e)
         {
-           
- // التأكد من اختيار طالب
-            if (dgvstudent.CurrentRow != null)
+            if (this.TopLevelControl is MainForm mainForm)
             {
-                // استخراج كائن الطالب من السطر المحدد
-                var student = (Student)dgvstudent.CurrentRow.DataBoundItem;
-
-                // التحقق من أن الفورم الحالي موجود داخل Panel لتجنب الأخطاء
-                if (this.Parent is Panel parentPanel)
+                // التأكد من اختيار طالب
+                if (dgvstudent.CurrentRow != null)
                 {
+                    // استخراج كائن الطالب من السطر المحدد
+                    var student = (Student)dgvstudent.CurrentRow.DataBoundItem;
+
+                    // التحقق من أن الفورم الحالي موجود داخل Panel لتجنب الأخطاء
+
                     // 1. إنشاء فورم التعديل
                     // نمرر: الـ Panel، رقم الطالب، ودالة إعادة تحميل الجدول (LoadStudent)
-                    UpdateStudent updateForm = new UpdateStudent(parentPanel, student.StudentId);
+                    UpdateStudent updateForm = new UpdateStudent(student.StudentId);
 
                     // 2. تعبئة البيانات (اختياري، لأنك غالباً تجلبها داخل UpdateStudent عبر الـ ID)
                     updateForm.LoadStudentData(student);
 
                     // 3. عرض الفورم
-                    updateForm.ShowInPanel();
+                    mainForm.OpenForm(updateForm);
                 }
-            }
+                }
             else
             {
                 MessageBox.Show("الرجاء اختيار طالب لتعديله");
@@ -223,26 +354,6 @@ namespace MySchool_Desktop_System
                 }
             }
         }
-
-
-        private void comboClassName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (isLoading) return;
-
-            //if (comboClassName.SelectedValue != null)
-            //{
-
-            //    int selectedClassId = Convert.ToInt32(comboClassName.SelectedValue);
-
-
-            //    List<Section> sections = studentServices.GetSectionFilter(selectedClassId);
-            //    MessageBox.Show($"عدد الشعب: {sections.Count}");
-            //    //comboSection.DataSource = sections;
-            //    comboSection.DisplayMember = "SectionName";
-            //    comboSection.ValueMember = "SctionId";
-            //    comboSection.DataSource = sections;
-            //}
-        }
        
         private void btnStudntDetails_Click(object sender, EventArgs e)
         {
@@ -252,52 +363,63 @@ namespace MySchool_Desktop_System
 
         private void تفاصيلعامةToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (dgvstudent.CurrentRow != null)
+            if (this.TopLevelControl is MainForm mainForm)
             {
+                 if (dgvstudent.CurrentRow != null)
+                {
                 var student = (Student)dgvstudent.CurrentRow.DataBoundItem;
+                
+                    // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
+                    DetailsForm detailsForm = new DetailsForm();
+                    mainForm.OpenForm(detailsForm);
 
-                // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
-                DetailsForm detailsForm = new DetailsForm(this.Parent as Panel);
-
-                // تمرير بيانات الطالب إذا أردت
-                detailsForm.LoadStudentDetails(student);
-
+                    // تمرير بيانات الطالب إذا أردت
+                    detailsForm.LoadStudentDetails(student);
+                }
                 // عرض الفورم داخل الـ Panel
-                detailsForm.ShowInPanel();
+                
             }
         }
 
         private void تفاصيلالرسومToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (dgvstudent.CurrentRow != null)
+            if (this.TopLevelControl is MainForm mainForm)
             {
+                if (dgvstudent.CurrentRow != null)
+                {
                 var student = (Student)dgvstudent.CurrentRow.DataBoundItem;
+                
+                    // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
+                    DetailsFeeForm detailsForm = new DetailsFeeForm(student.StudentId);
+                    detailsForm.LoadStudentDetails(student);
+                    mainForm.OpenForm(detailsForm);
+                }
 
-                // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
-                DetailsFeeForm detailsForm = new DetailsFeeForm(this.Parent as Panel);
+                    //detailsForm.LoadStudentDetails(student);
 
-                // تمرير بيانات الطالب إذا أردت
-                //detailsForm.LoadStudentDetails(student);
+                    // عرض الفورم داخل الـ Panel
 
-                // عرض الفورم داخل الـ Panel
-                detailsForm.ShowInPanel();
-            }
+                }
         }
 
         private void تفاصيلالدرجاتToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (dgvstudent.CurrentRow != null)
+            if (this.TopLevelControl is MainForm mainForm)
             {
+                if (dgvstudent.CurrentRow != null)
+                {
                 var student = (Student)dgvstudent.CurrentRow.DataBoundItem;
-
-                // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
-                DetailsGradeForm detailsForm = new DetailsGradeForm (this.Parent as Panel);
-
+                
+                    // إنشاء الفورم وإرساله نفس الـ Panel الموجود في MainForm
+                    DetailsGradeForm detailsForm = new DetailsGradeForm(student.StudentId);
+                    detailsForm.LoadStudentDetails(student);
+                    mainForm.OpenForm(detailsForm);
+                }
                 // تمرير بيانات الطالب إذا أردت
                 //detailsForm.LoadStudentDetails(student);
 
                 // عرض الفورم داخل الـ Panel
-                detailsForm.ShowInPanel();
+
             }
         }
     }

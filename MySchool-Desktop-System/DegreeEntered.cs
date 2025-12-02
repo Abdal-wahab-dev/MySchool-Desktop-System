@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MySchool_Desktop_System
 {
-    public partial class ClassManagement : Form
+    public partial class DegreeEntered : Form
     {
-        public ClassManagement()
+        public DegreeEntered()
         {
             InitializeComponent();
         }
